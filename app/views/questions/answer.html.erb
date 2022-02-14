@@ -1,0 +1,11 @@
+<%# <!-- display the question from /ask -->
+<% @questions %>
+<!-- display the answer generated on /answer -->
+<!-- the controller reads the question from params -->
+<p><%= @question %></p>
+<!-- the controller computes an instance variable @answer for the view to display-->
+<p><%= @answer %></p>
+
+
+<!-- Add a link to /ask on the answer.html.erb view using the link_to Rails helper. -->
+<%= link_to "Ask", ask_path  %>
